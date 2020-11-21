@@ -31,7 +31,7 @@ export default function Table () {
             <input value={value} onChange={(e)=>setValue(e.target.value)}/> <button onClick={handleSearch}> search</button>
             {/* header row here */}
             <Table striped bordered hover>
-  <thead>
+  <head>
     <tr>
       <th>#</th>
       <th>First Name</th>
@@ -39,7 +39,7 @@ export default function Table () {
       <th>Email</th>
       <th>Phone</th>
     </tr>
-  </thead>
+  </head>
   <tbody>
             {filteredEmployees.map((result,i ) => {
                 return(
